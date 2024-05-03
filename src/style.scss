@@ -1,3 +1,106 @@
+// imports
+@import "./colors.scss";
+
+* {
+    color: $fg;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+// general elements
+body {
+    margin: 0;
+    background-color: $bg-tertiary;
+}
+
 h1 {
-    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 25pt;
+}
+
+h2 {
+    font-size: 20pt;
+}
+
+// generic classes
+.tone_down {
+    font-style: italic;
+    color: $fg-secondary;
+}
+
+.body_wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+
+    .header {
+        width: 100%;
+        padding: 1rem;
+        align-self: start;
+        justify-self: start;
+        background-color: $bg;
+
+        display: flex;
+        flex-flow: row;
+
+        h1 {
+            font-family: "IBM Plex Mono";
+            font-weight: 500;
+            background-color: $purple;
+            width: fit-content;
+            padding: 0.5rem;
+            margin: 0;
+        }
+    }
+    .footer {
+        width: 100%;
+        padding: 1rem;
+        align-self: start;
+        justify-self: start;
+        background-color: $bg;
+
+        display: flex;
+        flex-flow: row;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .content {
+        max-width: 800px;
+
+        div.site_desc {
+            margin-bottom: 2rem;
+        }
+
+        div.about_me {
+            display: grid;
+            grid-template: "a ." auto
+                           "b c" 1fr;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0 3rem;
+            padding: 3rem;
+
+            background-color: $bg-secondary;
+
+            h2 { // from when title was inside the card
+                grid-area: a;
+                justify-self: start;
+                margin: 0 0 3rem;
+            }
+
+            img.pp {
+                grid-area: b;
+                border-radius: 50%;
+                height: 15rem;
+                box-shadow: 0 0 1.5rem $bg-tertiary;
+            }
+            
+            p {
+                grid-area: c;
+            }
+        }
+    }
 }

@@ -1,0 +1,52 @@
+// gruvbox theme
+
+// main colors
+$bg: #1d2021;
+$bg-hover: #1c1816;
+$bg-secondary: #2d3031;
+$bg-tertiary: #0d1011;
+
+$fg: #ebdbb2;
+$fg-secondary: #ab9b72;
+
+$selec-fg: #ebdbb2;
+$selec-bg: #d65d0e;
+
+$black: #3c3836;
+$black-l: #928374;
+$red: #cc241d;
+$red-l: #fb4934;
+$green: #98971a;
+$green-l: #b8bb26;
+$yellow: #d79921;
+$yellow-l: #fabd2f;
+$blue: #458588;
+$blue-l: #83a598;
+$purple: #b16286;
+$purple-l: #d3869b;
+$cyan: #689d6a;
+$cyan-l: #8ec07c;
+$white: #a89984;
+$white-l: #fbf1c7;
+
+// additional colors
+$orange: $selec-bg;
+
+// color classes
+.black {color: $black;}
+.black-l {color: $black-l;}
+.red {color: $red;}
+.red-l {color: $red-l;}
+.green {color: $green;}
+.green-l {color: $green-l;}
+.yellow {color: $yellow;}
+.yellow-l {color: $yellow-l;}
+.blue {color: $blue;}
+.blue-l {color: $blue-l;}
+.purple {color: $purple;}
+.purple-l {color: $purple-l;}
+.cyan {color: $cyan;}
+.cyan-l {color: $cyan-l;}
+.white {color: $white;}
+.white-l {color: $white-l;}
+.orange {color: $orange;}

@@ -1,2 +1,158 @@
+.black {
+  color: #3c3836;
+}
+
+.black-l {
+  color: #928374;
+}
+
+.red {
+  color: #cc241d;
+}
+
+.red-l {
+  color: #fb4934;
+}
+
+.green {
+  color: #98971a;
+}
+
+.green-l {
+  color: #b8bb26;
+}
+
+.yellow {
+  color: #d79921;
+}
+
+.yellow-l {
+  color: #fabd2f;
+}
+
+.blue {
+  color: #458588;
+}
+
+.blue-l {
+  color: #83a598;
+}
+
+.purple {
+  color: #b16286;
+}
+
+.purple-l {
+  color: #d3869b;
+}
+
+.cyan {
+  color: #689d6a;
+}
+
+.cyan-l {
+  color: #8ec07c;
+}
+
+.white {
+  color: #a89984;
+}
+
+.white-l {
+  color: #fbf1c7;
+}
+
+.orange {
+  color: #d65d0e;
+}
+
+* {
+  color: #ebdbb2;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #0d1011;
+}
+
 h1 {
-  font-family: 'Comic Sans MS', sans-serif; }
+  font-size: 25pt;
+}
+
+h2 {
+  font-size: 20pt;
+}
+
+.tone_down {
+  font-style: italic;
+  color: #ab9b72;
+}
+
+.body_wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+.body_wrapper .header {
+  width: 100%;
+  padding: 1rem;
+  align-self: start;
+  justify-self: start;
+  background-color: #1d2021;
+  display: flex;
+  flex-flow: row;
+}
+.body_wrapper .header h1 {
+  font-family: "IBM Plex Mono";
+  font-weight: 500;
+  background-color: #b16286;
+  width: fit-content;
+  padding: 0.5rem;
+  margin: 0;
+}
+.body_wrapper .footer {
+  width: 100%;
+  padding: 1rem;
+  align-self: start;
+  justify-self: start;
+  background-color: #1d2021;
+  display: flex;
+  flex-flow: row;
+}
+.body_wrapper .footer p {
+  margin: 0;
+}
+.body_wrapper .content {
+  max-width: 800px;
+}
+.body_wrapper .content div.site_desc {
+  margin-bottom: 2rem;
+}
+.body_wrapper .content div.about_me {
+  display: grid;
+  grid-template: "a ." auto "b c" 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 3rem;
+  padding: 3rem;
+  background-color: #2d3031;
+}
+.body_wrapper .content div.about_me h2 {
+  grid-area: a;
+  justify-self: start;
+  margin: 0 0 3rem;
+}
+.body_wrapper .content div.about_me img.pp {
+  grid-area: b;
+  border-radius: 50%;
+  height: 15rem;
+  box-shadow: 0 0 1.5rem #0d1011;
+}
+.body_wrapper .content div.about_me p {
+  grid-area: c;
+}
+
+/*# sourceMappingURL=style.css.map */
