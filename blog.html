@@ -1,0 +1,18 @@
+---
+layout: base
+title: Blog
+---
+
+<h1>All my posts !</h1>
+<ul>
+    {% for post in site.posts %}
+        <li>
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p class="tone_down">by {{ post.author }}<p>
+        </li>
+    {% endfor %}
+</ul>
+
+<!--
+    vim:ft=liquid
+-->

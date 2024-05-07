@@ -2,6 +2,7 @@
 @import "./colors.scss";
 
 * {
+    box-sizing: border-box;
     color: $fg;
     font-family: 'IBM Plex Sans', sans-serif;
 }
@@ -34,7 +35,6 @@ h2 {
     min-height: 100vh;
 
     .header {
-        box-sizing: border-box;
         width: 100%;
         padding: 1rem;
         align-self: start;
@@ -69,7 +69,9 @@ h2 {
     }
 
     .content {
+        width: 100%;
         max-width: 800px;
+        padding: 1rem;
 
         div.site_desc {
             margin-bottom: 2rem;
